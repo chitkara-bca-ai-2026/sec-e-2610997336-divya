@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Map Explorer</title>
+</head>
+<body>
+
+    <h1>World Map Explorer</h1>
+    <p>Click on different countries or continents on the map below to open their information page in a new tab.</p>
+
+    <!-- World map image loaded from Unsplash -->
+    <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1000&q=80" 
+         alt="World Map" 
+         usemap="#world-map" 
+         width="1000" 
+         height="667">
+
+    <map name="world-map">
+        <!-- 1. RECTANGLE shape: North America -->
+        <area shape="rect" 
+              coords="100,100,400,300" 
+              href="https://en.wikipedia.org/wiki/North_America" 
+              target="_blank" 
+              alt="North America region">
+
+        <!-- 2. CIRCLE shape: Australia -->
+        <area shape="circle" 
+              coords="820,500,80" 
+              href="https://en.wikipedia.org/wiki/Australia" 
+              target="_blank" 
+              alt="Australia region">
+
+        <!-- 3. POLYGON (poly) shape: South America (irregular shape) -->
+        <area shape="poly" 
+              coords="280,320, 390,320, 350,550, 290,450" 
+              href="https://en.wikipedia.org/wiki/South_America" 
+              target="_blank" 
+              alt="South America region">
+
+        <!-- 4. DEFAULT shape: Covers any other unmapped part of the image -->
+        <area shape="default" 
+              href="https://en.wikipedia.org/wiki/World" 
+              target="_blank" 
+              alt="Default region - World overview">
+    </map>
+
+</body>
+</html>

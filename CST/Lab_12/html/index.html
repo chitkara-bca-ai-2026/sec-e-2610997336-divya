@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Course Registration</title>
+</head>
+<body>
+
+    <h1>Online Course Registration</h1>
+
+    <!-- Task 1: Form with action and target attributes -->
+    <form action="submit_form.php" method="POST" target="_blank">
+
+        <!-- Task 7: Hidden input field with fixed value -->
+        <input type="hidden" name="form_source" value="Online Course Registration">
+
+        <!-- Task 2, 3, & 11: Student Name (Mandatory) -->
+        <div>
+            <label for="fullname">Student Name:</label><br>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+        </div>
+        <br>
+
+        <!-- Task 2, 3, & 11: Email Address (Mandatory) -->
+        <div>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        </div>
+        <br>
+
+        <!-- Task 2, 3, & 11: Mobile Number (Mandatory) -->
+        <div>
+            <label for="mobile">Mobile Number:</label><br>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+        </div>
+        <br>
+
+        <!-- Task 2 & 3: Age -->
+        <div>
+            <label for="age">Age:</label><br>
+            <input type="number" id="age" name="age" min="1" max="100" placeholder="Enter your age">
+        </div>
+        <br>
+
+        <!-- Task 2, 3, & 11: Password (Mandatory) -->
+        <div>
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        </div>
+        <br>
+
+        <!-- Task 3, 4, & 11: Gender (Mandatory) -->
+        <div>
+            <label>Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+        </div>
+        <br>
+
+        <!-- Task 3 & 5: Skills (Checkboxes) -->
+        <div>
+            <label>Skills:</label><br>
+            <input type="checkbox" id="html" name="skills" value="HTML">
+            <label for="html">HTML</label>
+            
+            <input type="checkbox" id="css" name="skills" value="CSS">
+            <label for="css">CSS</label>
+            
+            <input type="checkbox" id="js" name="skills" value="JavaScript">
+            <label for="js">JavaScript</label>
+            
+            <input type="checkbox" id="python" name="skills" value="Python">
+            <label for="python">Python</label>
+        </div>
+        <br>
+
+        <!-- Task 3, 6, & 11: Course Drop-down (Mandatory) -->
+        <div>
+            <label for="course">Select Course:</label><br>
+            <select id="course" name="course" required>
+                <option value="" disabled selected>-- Select a Course --</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Python Programming">Python Programming</option>
+                <option value="Data Analytics">Data Analytics</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+            </select>
+        </div>
+        <br>
+
+        <!-- Task 3 & 8: Date of Birth and Preferred Class Time -->
+        <div>
+            <label for="dob">Date of Birth:</label><br>
+            <input type="date" id="dob" name="dob">
+        </div>
+        <br>
+
+        <div>
+            <label for="classtime">Preferred Class Time:</label><br>
+            <input type="time" id="classtime" name="classtime">
+        </div>
+        <br>
+
+        <!-- Task 3 & 9: Address / Additional Information -->
+        <div>
+            <label for="address">Address / Additional Information:</label><br>
+            <textarea id="address" name="address" rows="4" cols="40" placeholder="Enter your address or additional notes..."></textarea>
+        </div>
+        <br>
+
+        <!-- Task 3 & 10: File Upload Field -->
+        <div>
+            <label for="document">Upload Document or Photograph:</label><br>
+            <input type="file" id="document" name="document">
+        </div>
+        <br>
+
+        <!-- Task 12: Submit and Reset Controls -->
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </div>
+
+    </form>
+
+</body>
+</html>

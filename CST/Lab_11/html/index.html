@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested Tables</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 20px;">
+
+    <h1 align="center">Tasks for Nested Tables</h1>
+
+    <!-- TASK 1: Employee Salary Slip -->
+    <h3>1. Employee Salary Slip</h3>
+    <table border="1" cellpadding="8" cellspacing="0" width="100%" style="margin-bottom: 30px;">
+        <tr bgcolor="#D9E1F2">
+            <th colspan="2" align="left">Employee Salary Slip (Nested Table)</th>
+        </tr>
+        <tr>
+            <td width="25%"><b>Employee ID</b></td>
+            <td>EMP202</td>
+        </tr>
+        <tr>
+            <td><b>Employee Name</b></td>
+            <td>Pooja Sharma</td>
+        </tr>
+        <tr>
+            <td><b>Department</b></td>
+            <td>Finance</td>
+        </tr>
+        <tr>
+            <td><b>Designation</b></td>
+            <td>Accountant</td>
+        </tr>
+        <tr>
+            <td><b>Month</b></td>
+            <td>August 2025</td>
+        </tr>
+        <tr>
+            <td><b>Salary Details</b></td>
+            <td>
+                <!-- Nested Table for Salary Details -->
+                <table border="1" cellpadding="6" cellspacing="0" width="100%">
+                    <tr align="center" bgcolor="#C6D9F1">
+                        <th colspan="2">Earnings</th>
+                        <th colspan="2">Deductions</th>
+                    </tr>
+                    <tr align="center" bgcolor="#E9EEF4">
+                        <th>Item</th>
+                        <th>Amount</th>
+                        <th>Item</th>
+                        <th>Amount</th>
+                    </tr>
+                    <tr>
+                        <td>Basic Pay</td>
+                        <td align="right">&#8377;28,000</td>
+                        <td>PF</td>
+                        <td align="right">&#8377;2,000</td>
+                    </tr>
+                    <tr>
+                        <td>HRA</td>
+                        <td align="right">&#8377;7,000</td>
+                        <td>Tax</td>
+                        <td align="right">&#8377;1,800</td>
+                    </tr>
+                    <tr>
+                        <td>DA</td>
+                        <td align="right">&#8377;4,000</td>
+                        <td>Loan</td>
+                        <td align="right">&#8377;1,000</td>
+                    </tr>
+                    <tr bgcolor="#C6D9F1">
+                        <td><b>Total Earnings</b></td>
+                        <td align="right"><b>&#8377;39,000</b></td>
+                        <td><b>Total Deductions</b></td>
+                        <td align="right"><b>&#8377;4,800</b></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td><b>Net Salary</b></td>
+            <td><b>&#8377;34,200</b></td>
+        </tr>
+    </table>
+
+
+    <!-- TASK 2: Student Profile & Marks -->
+    <h3>2. Student Profile & Marks</h3>
+    <table border="1" cellpadding="8" cellspacing="0" width="100%" style="margin-bottom: 30px;">
+        <tr bgcolor="#E2EFDA">
+            <th colspan="2" align="left">Student Profile & Marks (Nested Table)</th>
+        </tr>
+        <tr>
+            <td width="25%"><b>Student Name</b></td>
+            <td>Ritika Verma</td>
+        </tr>
+        <tr>
+            <td><b>Roll Number</b></td>
+            <td>1023</td>
+        </tr>
+        <tr>
+            <td><b>Class</b></td>
+            <td>BCA - 2nd Year</td>
+        </tr>
+        <tr>
+            <td><b>Details</b></td>
+            <td>
+                <!-- Nested Table for Student Marks -->
+                <table border="1" cellpadding="6" cellspacing="0" width="100%">
+                    <tr align="center" bgcolor="#C6E0B4">
+                        <th>Subject</th>
+                        <th>Marks</th>
+                        <th>Grade</th>
+                    </tr>
+                    <tr>
+                        <td>Computer Networks</td>
+                        <td align="center">88</td>
+                        <td align="center">A</td>
+                    </tr>
+                    <tr>
+                        <td>Web Technologies</td>
+                        <td align="center">85</td>
+                        <td align="center">A</td>
+                    </tr>
+                    <tr>
+                        <td>Database Management</td>
+                        <td align="center">92</td>
+                        <td align="center">A+</td>
+                    </tr>
+                    <tr>
+                        <td>Discrete Mathematics</td>
+                        <td align="center">78</td>
+                        <td align="center">B+</td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- TASK 3: Product Order Summary -->
+    <h3>3. Product Order Summary</h3>
+    <table border="1" cellpadding="8" cellspacing="0" width="100%" style="margin-bottom: 30px;">
+        <tr bgcolor="#E4DFEC">
+            <th colspan="2" align="left">Product Order Summary (Nested Table)</th>
+        </tr>
+        <tr>
+            <td width="25%"><b>Order ID</b></td>
+            <td>ORD4578</td>
+        </tr>
+        <tr>
+            <td><b>Customer Name</b></td>
+            <td>Amanpreet Kaur</td>
+        </tr>
+        <tr>
+            <td><b>Order Date</b></td>
+            <td>12-09-2025</td>
+        </tr>
+        <tr>
+            <td><b>Order Items</b></td>
+            <td>
+                <!-- Nested Table for Order Items -->
+                <table border="1" cellpadding="6" cellspacing="0" width="100%">
+                    <tr align="center" bgcolor="#D1C5E1">
+                        <th>Product</th>
+                        <th>Quantity</th>
+                        <th>Price (&#8377;)</th>
+                        <th>Amount (&#8377;)</th>
+                    </tr>
+                    <tr>
+                        <td>Laptop</td>
+                        <td align="center">1</td>
+                        <td align="right">45,000</td>
+                        <td align="right">45,000</td>
+                    </tr>
+                    <tr>
+                        <td>Mouse</td>
+                        <td align="center">1</td>
+                        <td align="right">1,200</td>
+                        <td align="right">1,200</td>
+                    </tr>
+                    <tr>
+                        <td>Backpack</td>
+                        <td align="center">1</td>
+                        <td align="right">2,500</td>
+                        <td align="right">2,500</td>
+                    </tr>
+                    <tr bgcolor="#D1C5E1">
+                        <td colspan="3" align="right"><b>Total Amount</b></td>
+                        <td align="right"><b>48,700</b></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+
+    <!-- TASK 4: Hotel Booking -->
+    <h3>4. Hotel Booking</h3>
+    <table border="1" cellpadding="8" cellspacing="0" width="100%" style="margin-bottom: 30px;">
+        <tr bgcolor="#FCE4D6">
+            <th colspan="2" align="left">Hotel Booking (Nested Table)</th>
+        </tr>
+        <tr>
+            <td width="25%"><b>Guest Name</b></td>
+            <td>Simran Kaur</td>
+        </tr>
+        <tr>
+            <td><b>Booking ID</b></td>
+            <td>HBK7890</td>
+        </tr>
+        <tr>
+            <td><b>Room Type</b></td>
+            <td>Deluxe Room</td>
+        </tr>
+        <tr>
+            <td><b>Booking Details</b></td>
+            <td>
+                <!-- Nested Table for Booking Details -->
+                <table border="1" cellpadding="6" cellspacing="0" width="100%">
+                    <tr align="center" bgcolor="#F8CBAD">
+                        <th>Check-in Date</th>
+                        <th>Check-out Date</th>
+                        <th>Guests</th>
+                        <th>Charges (&#8377;)</th>
+                    </tr>
+                    <tr align="center">
+                        <td>15-10-2025</td>
+                        <td>18-10-2025</td>
+                        <td>2</td>
+                        <td align="right">7,500</td>
+                    </tr>
+                    <tr bgcolor="#F8CBAD">
+                        <td colspan="3" align="right"><b>Total Charges</b></td>
+                        <td align="right"><b>7,500</b></td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>
